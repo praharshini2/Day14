@@ -1,0 +1,132 @@
+Recap 11
+=====
+
+1. What is operator overloading 
+overloading an operator to act like a method
+ 
+2. Why operator overloading
+so that we can use operators with objects we overload them
+ 
+3. Syntax of the declaration to overload an + operator
+public static ClassName operator +(parameters)
+{
+ 
+}
+4. Why should we declare the overload method as static
+so that we can call them without an object
+ 
+5. What is a delegate
+delegate is an C# program
+which can refer to any function , function pointers
+ 
+6. Why Delegate
+Based on the event. A delegate should be able to execute the respective function
+ 
+7. Create a delegate for the following method
+public void SayHello(string name);
+public delegate void MyDelegate(string s)
+ 
+8. Steps to work with a delegate
+Create a delegate
+Create an object of delegate
+Invoke or execute the function using delegate
+ 
+9. Two different ways to execute a delegate
+obj.Invoke(10,20)
+obj(10,20)
+ 
+10. What is multicast delegate
+if one object of a delegate can execute multiple functions
+ 
+11. How to create a multicast
+obj += new MyDelegate(Substract)
+ 
+12. Delegates belong to which Namespace
+System
+ 
+13. when to use a delegate
+Event driven programming
+Call Back functions
+ 
+14. what is an event 
+Action performed by user on the screen
+ 
+15. what is an event handler
+Code that executes in response to an event
+ 
+16. What is event driven programming 
+Code executes only and only when event occurs
+ 
+17. What is an Anonymous method
+function without a name is anonymous
+ 
+MyDelegate obj = delegate(int a,int b){
+return a+b;
+}
+18. What is an Lambda Expression
+short cut version of functions
+mostly we lamdba expression as paramters to a function
+ 
+19. What is goes to operator
+ 
+goes to operator in used in lamdba expression
+it separates parameters from the body of the expression
+called arrow in other languages
+MyDelegate obj = delegate(int a,int b) => a+b;
+ 
+20. What is LINQ
+Language Integrates query
+ 
+21. Why LINQ
+To querying, it can query any datasource
+ 
+22. Two ways to work with LINQ
+query
+methods
+ 
+23. Which Namespace is used for LINQ
+using System.Linq;
+ 
+24. Return type of Linq query or an Linq method 
+IEnumerable<Employee>
+IEnumerable<int>
+IEnmerable<string>
+ 
+ 
+25. what if your query return only single value how to write a linq query or linq method
+Single();
+Employee emp = empList.Where(e => e.Empid == id).Single();
+ 
+26. write a linq query to display all the employees who belong to department Sales
+var result = from a in EmpList
+		where a.Department == "Sales"
+		select a;
+27. write a linq method to display all the employees who belong to department Sales
+IEnumerable<Employee> result = EmpList.Select(e => e.Department == "Sales");
+ 
+28. What is a predicate
+Predicate Generic type of delegate which takes input and return true or false
+29. What is Array.Find 
+Built in method of Arrayclass
+And it returns the first match from the array
+ 
+30. Syntax of Array.Find using predicate
+ 
+Employee rahul = Array.Find(EmpList,PredicateMethod);
+ 
+public bool PredicateMethod(Employee emp)
+{
+return emp.EmpName == "Rahul";
+}
+ 
+31.Syntax of Array.Find using anonymous
+ 
+Employee rahul = Array.Find(EmpList,(Employee emp)
+{
+return emp.EmpName == "Rahul";
+});
+ 
+32. Syntax of Array.Find using lamdba
+Employee rahul = Array.Find(EmpList,(Employee emp) =>emp.EmpName == "Rahul");
+
+

@@ -1,0 +1,200 @@
+Recap Day3 and Day4
+=====================
+1. How many types of loops are there in C#
+They are four types of loops in c#: for, while,do while,for each
+
+2. What are loops
+The loops are comands which will repeat something
+
+3. difference between for and while
+We use for loop when we know how many loops it should run
+we use while when we dont known how many times it should run
+
+4. difference between while and do while
+while executes only after checking the condition. do while runs once and check the condition.
+
+5. foreach(var a in arr) what is a here index or value
+value
+
+6. Predict the output
+int i=1;
+while(i<=10)
+{
+Console.WriteLine($"{i}");
+}
+1,1,1.....infinite
+
+7. Predict the output
+int i=1;
+do
+{
+Console.WriteLine($"{i}");
+i++;
+}
+while(i<=10)
+error
+
+8. Predict the output
+for(int i=0;i<=10;i++);
+{
+Console.WriteLine($"{i}");
+}
+error
+
+9. What is a static method
+	Methods declared with static keyword are called static methods. Static methods can't access class variable.
+	Static methods can be executed directly without creating an object of the class.
+	Syntax : ClassName.static_method();
+	e.g. Console.WriteLine();
+	Console is a class and WriteLine is a static function.
+ 
+10. What is a static variable
+	1. Variable declared with static keyword.
+	2. All objects will share same memory and same value.
+	3. To assign a value to a static variable, use static constructor.
+	4. Static variables are accessible inside a static function.
+	5. Static variables are accessible inside any function.
+ 
+11. what is a static class
+	1. Classes declared with static keyword is a Static class.
+	2. All the members should be static in a static class.
+      3. No object is created for static class.
+static constructor runs one time. 
+
+12. where do you initialize static variable
+in class
+
+13. Types of Dattypes
+there are two types of datatypes: value and reference
+
+14. What is boxing and unboxing
+Converting a value type to reference is called boxing(implicit typecasting). implicit means automatic
+example:
+int num = 10;
+Object obj1 = num;
+
+converting a reference type to value is called unboxing(explicit typecasting)
+Object obj = 10;
+in num = int obj1;
+it is used in collections and generics
+
+15. What is an array and how to create an array
+Array is a homogeneous collection of data. it store the data sequentially in memory.
+accessed with same name
+each value is differentiated with using index number
+int arr = new int [5]{1,2,3,4,5};
+
+16. int arr = new int[5]{1,2,3,4,5,6};
+What does the above code do
+It will show an error
+
+17. What is stack and heap
+values  are stored in stack(lifo)
+reference types are stored in heaps
+
+18.what is call by value
+calling a function by passing values
+When we dont have to change the actual value of the variable we use call by value, we are creating extra space.
+
+19.  what is call by refrence
+Calling a function by passing address of another memory
+Changes to parameter are reflected back to caller
+call by reference is faster. and we are not creating seperate space.
+
+20. difference between call by value and call reference
+call by value:
+memory locations are created
+changes to parameters are not be reflected back to caller
+call by reference:
+both parameter and argumnt share same memory location
+changes to parameter are reflercted back to caller.
+
+21. What are out parameters and why and when do you use them
+when we want to get many return values we use out parameters. 
+
+22. what are named parameters
+With named parameter we can call function with parameter name, in any sequence and order.
+
+23. What is object oriented programming and why
+object oriented programming language is a programming language which treates everything as objects. It is used to create real world applications.
+programming based on objects
+
+24. Two important components of OOP
+objects and class
+
+25. what is a class
+class is ablue print or templates. It doesnotexist in real world. it is a real world entity.
+
+26. what is an object
+object is a instance of class and every object has is own values, one memory data and own copy of memory data
+ 
+27. syntax to create an object
+Product product = new Product();
+
+28. features of an object
+each oj has its own id
+each obj exist in a particular state 
+oj can interact with other obj
+
+29. features of oopl
+abstraction
+encapsulation
+inheritance
+polymorphism
+
+30. what is abstraction
+Getting required details is abstraction
+
+31. What is encapsulation and how is it implemented
+encapsulation means hiding some data which is not necessary to be known by user. 
+It is  implemented by using private access specifier 
+wrapping data and functions as a package
+
+32. What is inheritance
+reusing existing program into a new program is inheritance. it is different from calling a function.
+or 
+reusing an existing class into the new class
+child class can have its own features.
+
+33. Does dotnet supports multiple inheritance
+no
+
+34. Types of polymorphism give examples
+run time polymorphism and compile polymorphism
+compile time (static) polymorphism: 
+function overloading
+constructor overloading
+operator overloading
+run time (dynamic) polymorphism:
+abstract class
+virtual functions
+
+35. what is a constructor and why
+It is a special method which is called when the class is created
+used to intialize the member data
+invoked when instance is created
+does not have return typer or void.
+
+36. what is auto implemented object 
+CLR generates the constructor
+ClassName obj = new ClassName(){id=1};
+ClassName obj = new ClassName(){id=1,name="samatha};
+ClassName obj = new ClassName(){name="samatha};
+
+37. What is property and why
+private members are not accessible out side the class
+properties are used to access private members outside the class
+
+38. parts of a property
+get: return the data
+set: assign the value
+
+39. Types of property
+read and write, read only, write only
+
+40. auto implemented property
+prop tab
+public int id{get; set;}
+
+
+

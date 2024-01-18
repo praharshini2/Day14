@@ -1,0 +1,141 @@
+1.What is c#
+It is an Object-Oriented Programming language created by microsoft that runs on the .net framework
+
+2.What is the extension of c#
+.cs
+
+3.extension compiled code of c#
+.exe
+
+4.What is a presentation layer and why
+The user interacts with presentation layer, we gives input and recieves output and errors.
+
+5. What is business layer and why is it called business layer
+Business layer is used to write codes and logics and also it uses for implementing business rules.
+
+6. What is DataLayer and why
+we can store permanent data in the datalayer 
+
+7. What is architecture
+Arrangement of layers
+
+8. Types of architectures
+single-tier
+two-tier
+three-tier
+n-tier
+distributed and service oriented architecture 
+
+9. What is Single tier architecture 
+we can store all the layers in one .exe file.
+If we want to modify the code or if we want to change any errors or any changes we have to built the apllication from the start.
+
+10. What is Two tier architecture
+we can store the layers in two different computers or we can store the layers in two different softwares in same computer
+Fatclient- Thinserver
+Thinclient- Fatserver
+
+11. What is three tier architecture
+we can store the layers in three different computers or same computer 3 different softwares.
+it is flexible,scalable,extensible
+
+12. What is N tier architecture
+we can store the business layer in n business logics
+it is more flexible, more scalable, more extensible
+presentation layer
+business logic
+business logic
+business logic
+.
+.
+datalayer
+
+13. What is distributed and service oriented architecture
+we can take the services in between business class so it saves us money and time
+prsenation layer
+business layer
+service 
+business layer
+service
+business layee
+datalayer
+
+14. What is a Service
+service is business logic provided by third-party which we can implement in our application also.
+
+15. Types of Services
+web service
+window service
+
+16. What is Visual Studio and why
+the place where can develop .net programs. It is integrated developers environment. the community addition is free
+
+17. Advantages of Visual Studio
+User-friendly
+reduce errors
+provides hints
+flexible in terms of compilation
+autocomplete and intellicence
+
+18. Stand alone applications are apart of which architecture
+Two-tier architectures
+
+19. Web Applications are apart of which architecture
+Three-tier architectures
+
+20. A class is made up of _______functions_ and ___variables________
+
+21. ______object__ has to be created to execute a class
+
+22. How to execute a function
+obj function()
+call the function
+
+23. difference between internal and public
+Internal keyword can only be used within the specific project. public keyword we can use it in other projects also.
+
+24. List the datatypes of C#
+var,int,float,string,char,double,decimal,long
+
+25. three different ways to create a variable in C#
+int a
+var a
+dynamic a
+
+26. difference between var and dynamic
+var we can only use in functions
+dynamic can use in class and anywhere
+var called as member data
+dynamic called as member function
+var uses 3.0 version
+dynamic uses4.0 version
+var a=10;
+a = "praharshini" (not possible)
+dynamic a=10;
+a = "praharshini" (possible)
+
+27. what is a nullable variable
+we can store null values
+String? name
+
+28. Console.WriteLine ???
+it is used to print the output
+
+29. Console.ReadLine ???
+To accept input from the console
+
+30. The datatype which Console.ReadLine reads the data as
+string
+
+31. Console.ReadLine() Two different ways to convert the data into integer
+-> Coveret.ToInt32(console.ReadLine());
+->Int.Parse(Console.ReadLine());
+
+32. what is using System does
+it imports the system librarys
+
+33. What is System
+system is a in-built library
+
+34. what is using 
+imports the libraries

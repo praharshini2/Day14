@@ -1,0 +1,133 @@
+using System;
+ 
+public class Student{
+    string name;
+    int age;
+    public void GetStudentName(){
+        Console.WriteLine("Enter Student Name: ");
+        name = Console.ReadLine();
+        Console.WriteLine("Enter your age");
+        age = Convert.ToInt32(Console.ReadLine());
+    }
+    public void PrintStudentName(){
+        Console.WriteLine($"Student name is: {name} \n Age is {age}");
+    }
+}
+ 
+public class Square{
+    int num;
+    int square;
+    public void GetNumber(){
+        Console.WriteLine("Enter Number");
+        num = Convert.ToInt32(Console.ReadLine());
+    }
+    public void SquareNumber()
+    {
+        square = num*num;
+        Console.WriteLine($"Square of {num} is {square}");
+    }
+
+}
+ 
+public class Centrigrade{
+    int a, farenheit;
+    public void GetCentrigrade(){
+        Console.WriteLine("Enter a number: ");
+        a = Convert.ToInt32(Console.ReadLine());
+    }
+    public void PrintFarenheit(){
+        farenheit = (a * 9/5) + 32;
+        Console.WriteLine($"centigrade of {a} is {farenheit}");
+    }
+}
+ 
+public class TwoNumbers{
+    int a, b;
+    public void GetNum(){
+        Console.WriteLine("Enter first number: ");
+        a = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Enter second number: ");
+        b = Convert.ToInt32(Console.ReadLine());
+    }
+    public void PrintArithmeticExpression(){
+        Console.WriteLine($"Addition: {a+b}");
+        Console.WriteLine($"Multiplication: {a*b}");
+        Console.WriteLine($"Divison: {a/b}");
+        Console.WriteLine($"Subtraction: {a-b}");
+    }
+}
+
+public class Employee{
+    int Empid;
+    string Name, Designation, Department;
+    
+    public void GetEmploy(){
+        Console.WriteLine("Enter Employee ID: ");
+        Empid = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Enter Employee Name: ");
+        Name = Console.ReadLine();
+        Console.WriteLine("Enter Employee Designation: ");
+        Designation = Console.ReadLine();
+        Console.WriteLine("Enter Employee Department: ");
+        Department = Console.ReadLine();
+    }
+    public void PrintEmployeeDetails(){
+        Console.WriteLine($"{Empid}");
+        Console.WriteLine($"{Name}");
+        Console.WriteLine($"{Designation}");
+        Console.WriteLine($"{Department}");
+        
+    }
+}
+
+public class Product{
+    int id, units, price;
+    string name;
+    
+    public void GetProduct(){
+        Console.WriteLine("Enter Product ID: ");
+        id = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Enter Unitspurchased: ");
+        units = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Enter Productname: ");
+        name = Console.ReadLine();
+        Console.WriteLine("Enter Productprice");
+        price = Convert.ToInt32(Console.ReadLine());
+        
+    }
+    
+    public void PrintProduct(){
+        Console.WriteLine($"{id}");
+        Console.WriteLine($"{name}");
+        Console.WriteLine($"{price}");
+        Console.WriteLine($"{units}");
+        
+    }
+}
+
+ 
+public class HelloWorld {
+    public static void Main(string[] args) {
+        // Student s1 = new Student();
+        // s1.GetStudentName();
+        // s1.PrintStudentName();
+        // Square s2 = new Square();
+        // s2.GetNumber();
+        // s2.SquareNumber();
+        // Centrigrade s3 = new Centrigrade();
+        // s3.GetCentrigrade();
+        // s3.PrintFarenheit();
+        // TwoNumbers s4 = new TwoNumbers();
+        // s4.GetNum();
+        // s4.PrintArithmeticExpression();
+        // Employee s5 = new Employee();
+        // s5.GetEmploy();
+        // s5.PrintEmployeeDetails();
+        Product s6 = new Product();
+        s6.GetProduct();
+        s6.PrintProduct();
+        
+    }
+}
+ 
+

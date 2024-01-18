@@ -1,0 +1,152 @@
+1. What is a Framework ?
+	Step by step approach
+	Predefined step by step approach
+	Solution to a problem
+	Scientific methodology
+
+2. What is dot net framework
+	It is a predefined step by step approach to Design, Develop and Deploy a .NET application.
+
+3. Name 2 languages supported by dotnet
+	C#, VB.net, f#
+
+4. What are namespaces and why namespaces
+	A library in .NET is called namespace. 
+	Namespaces are important when we want to import a library we want to use in our project that is already existing.
+
+5. What is an assembly . Parts of assembly
+	Assembly is a deployable unit or an executable unit.
+	Parts of Assembly :
+	1. Metadata :
+		It contains data about the assembly such as Name of the assembly and Version of the Assembly.
+	2. IL (Intermediate Language)
+		It is the compiled code (.exe )
+	3. Type Details :
+		It contains all the details such as variables used, libraries used, class names and datatypes.
+
+6. What is metadata
+	Metadata contains data about the assembly such as Name of the assembly and Version of the Assembly.
+
+7. What is typedetails
+	Type Details contains all the details such as variables used, libraries used, class names and datatypes.
+
+8. What is CLR
+	CLR (Common Language Runtime)
+
+9. Features of CLR
+	FEATURES OF CLR
+	1. Automatic Garbage Collection
+	( CLR at regular interval of time checks for unused and unreferred objects and marks them delete. 
+  	Garbage Collector would delete them.
+  	The Objects which are still in use will move to next generation.)
+
+	2. Language interoperability using CTS
+	(Runtime provides common datatype which enables different languages to interact.)
+
+	3. Code Access Security
+	(Provides security to the code. )
+
+	4. Platform Independent
+	(Ability to run on any operating system
+	--> CLR checks for which Operating System it is.
+	--> CLR will load the respective compiler.
+	--> Compiler will re-compile the IL into native/machine code (This compiler is JIT (Just In Time) compiler).Hence it is platform independent.
+	)
+
+	5. Multi-version support using Assembly
+
+
+10. What are generations
+	Generations are a place where the variables are shifted when CLR visits them each time.
+
+11. What GC
+	Garbage Collector
+
+12. How is multiple language integration achieved ?
+	(Runtime provides common datatype which enables different languages to interact.)
+
+13. what is CAS
+	Code Access Security (CAS).It gives security to the code.
+
+14. What is JIT
+	(Just In Time Compiler ) compiles the intermediate code to native/machine code.
+
+15. Can different versions of dotnet app exists in a single computer
+	Yes
+
+16. What is Intermediate Language
+	It is the compiled code (.exe code)
+
+17. What is modular programming and how is it achieved
+	Dividing the programs into small units/modules. Each module is called as function or method.
+	Advantage : Code Reusability, Readability, easy debugging
+
+18. Two parts of a function
+	Function defintion and declaration
+
+19. In C# functions and methods are same or different
+	same
+
+20. What is are Access Specifiers
+	keywords which define the scope of the variables, classes or functions (e.g. private, public, protected)
+
+21. Default Access Specifier for class, variable, function
+	class -> Internal
+	variable -> private
+	function -> private
+
+22. What is a void function
+	The function which do not return anything
+
+23. What is a function with return type
+	Function with a return type means that it will return some value be it int, char, float, string, etc.
+
+24. what is an expression
+	It is a combination of variables, symbols or operations that can be executed 
+
+25. difference between pre and post
+	pre -> first perform the operation and then use
+	post -> first use and then perform the operation.
+	
+26. x++ is this pre or post
+	neither pre or post.
+27. 
+int a =20;
+if(a<10)
+{
+Console.WriteLine($"{a} is Less than 10");
+}
+else
+{
+Console.WriteLine($"{a} is greater than 10");
+}
+20>10
+
+28.
+int a = 20;
+switch(a)
+{
+case 1:
+statements;
+break;
+case 2:
+statements;
+break;
+default:
+statements
+}
+Predict the output
+	Compilation error (default does not have a break)
+
+
+29.Difference between parameter and argument
+	public void Add(int a, int b){ } --> Parameter
+	
+	Add(10,20) --> Argument
+
+30.What are default and optional parameters
+	default and optional are same parameters. They should be the last one.
+	e.g. public void Add(int a, int b=20)
+
+31.How many parameters a function can have
+	Any number of parameters.

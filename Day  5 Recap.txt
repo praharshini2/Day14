@@ -1,0 +1,121 @@
+1. Which of the following is the correct declaration of an array
+int[] arr = new int[];
+int arr[] = new arr[];
+int[] arr=new int[5];
+int[] arr = new int[]{1,2,3,4,5};
+int[] arr = new int[5]{1,2,3,4,5};
+int[] arr = {1,2,3,4,5};
+ 
+2. What does ToCharArray() do?
+converts string to char array
+ 
+3. What is Split() method do
+takes a parameter and when divides the sentence
+ 
+4. What are the parameters of Split method
+arrayname.Split(' ');
+arrayname.Split(',');
+arrayname.Split('.');
+arrayname.Split(':');
+arrayname.Split(';');
+arrayname.Split('/');
+
+5. How to convert any datatype to string
+ToString();
+
+6. What is Array in C#
+it's a built in class
+provides lot of ready made methods
+ 
+7. What does Reverse() do in an Array give Syntax
+Reverse the sequence of elements in the entire array
+Array.Reverse(nameofthearray);
+ 
+8. What does Split() do in an Array give Syntax
+arrayname.Split('');
+ 
+9. What does Min() and Max() do in Array
+Built in functions of Array class
+Min returns min value of an array
+Max return max value of an array
+ 
+10. How to create an array of Objects of class Student
+ 
+Student[] stds=new Student[]{
+new Student(){regno=1,name="sa1"},
+new Student(){regno=1,name="sa1"},
+new Student(){regno=1,name="sa1"},
+new Student(){regno=1,name="sa1"}
+};
+11. Write a Syntax to dispaly values from a string array whose names starts with S and Length greater than 5
+ 
+foreach(string s in array)
+{
+	if(s.StartsWith('S') && s.Length >5)
+	{
+	  Console.WriteLine($"{s}");
+	}
+}
+ 
+12. Write a Syntax to display all Employees from Employees array whose Designation is Manager
+ 
+foreach(Employee a in employees)
+{
+	if(a.Designation.Equals("Manager"))
+	{
+	  Console.WriteLine($"{a.Empid} {a.EmpName} {a.Designation} {a.Department}");
+	}
+}
+ 
+13. Syntax to count for a particular alphabet in a sentence
+ 
+ 
+char[] a = sentence.ToCharArray(); 
+foreach(char i in a )
+{
+	if(ch == i)
+	{
+	count++;
+	}
+}
+ 
+14. Draw back of an array
+cannot store different datatypes
+array size is fixed
+cannot increase or decrease array size at runtime
+ 
+15. What are Collections and why
+Built in NameSpace, collection of predefinec classes and interfaces
+which can store any type of data
+array size can be increased and decreased with out loosing data
+ 
+16. Types of Collections
+index
+key value
+lifo
+fifo
+index , key value
+ 
+17. ArrayList is a Collection class which works with Index (its index based)
+18. Which method is used to add values to a ArrayList
+Add
+ 
+19. What is auto implemented collection give syntax
+ 
+ArrayList arr = new ArrayList(){1, "samatha", true , 12.34f};
+ 
+ 
+20. give syntax to display values from ArrayList using forloop
+for(int i=0; i<array.Count; i++)
+{
+	Console.WriteLine($"{array[i]}");
+}
+ 
+21. give syntax to display values from ArrayList using foreach
+ 
+foreach(var a in array)
+{
+Console.WriteLine($"{a}");
+}
+ 
+ 
